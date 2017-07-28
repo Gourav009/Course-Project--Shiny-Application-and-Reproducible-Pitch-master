@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pitch Presentation for the Game &quot;Guess The Number!&quot;</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Pitch Presentation for the Game &quot;Guess The Number!&quot;">
+  <meta name="author" content="Mohammad Sirajee">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Pitch Presentation for the Game &quot;Guess The Number!&quot;</h1>
+    <h2>(Use arrow keys to navigate)</h2>
+    <p>Mohammad Sirajee<br/>Developing Data Products Course Project</p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>Introduction and Motivation Behind the Game</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>This shiny app/game was created as part of the course project for the
+Developing Data Products class under the Data Science Specialization offered by Johns Hopkins Bloomberg School of Public Health and Coursera.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>How to Play &quot;Guess The Number!&quot;</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>This game is pretty self-explanatory! Nevertheless, for the newbie further information on how to play the game is on the game interface itself. Basically, the user/player has to guess a number between 1 and 100 (inclusive) and see if it matches the computer&#39;s selection. The game outputs feedback to the player and lets him/her know if the guess is higher or lower than the number. Moreover, the game also lets the user know if the guess is below or above the prescribed limit and makes recommendations about the range for the next guess.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-3" style="background:;">
+  <hgroup>
+    <h2>R Code for the Computer&#39;s Selected Number</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>The following line of R code is placed on server.R of the shiny project and is executed once everytime the app is run. The runif(1,1,101) command selects a floating-point number between 1 and 101 and floor() is used to turn it into an integer between 1 and 100.  </p>
+
+<pre><code class="r">floor(runif(1,1,101))
+</code></pre>
+
+<pre><code>## [1] 41
+</code></pre>
+
+<pre><code class="r">floor(runif(1,1,101))
+</code></pre>
+
+<pre><code>## [1] 90
+</code></pre>
+
+<p>Although there are other blocks of code in the project that may require  further explanation, to me, this seemed to be the single most important one.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-4" style="background:;">
+  <hgroup>
+    <h2>Comments about the Game and Acknowledgements</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Although I have made some efforts in making the game, please note that it is by no means complete or flawless. For example, among all other bugs that my peers will notice when assessing the app, perhaps the most prominent is that the game doesn&#39;t stop even after the player has guessed the number correctly. It is due to my lack of skills/experience with Shiny and app development in general that such a flaw persists in the game. I sincerely apologize for this.</p>
+
+<p>Furthermore, I would like to direct everyone to a more comprehensive, better and visually pleasing version this game (from an awesome developer) at <a href="http://www.funbrain.com/guess/">http://www.funbrain.com/guess/</a></p>
+
+<p>Finally, I would like to thank our Data Science Instructors Drs. Roger Peng, Jeff Leek and Brian Caffo and everyone else behind the screen for their great effors with the Data Science Specialization classes.</p>
+
+<p>A special and more relevant thanks to Dr. Caffo for his contribution on the Developing Data Products class. It was due to his instructions and directions that the creation of this game was made possible.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='Introduction and Motivation Behind the Game'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='How to Play &quot;Guess The Number!&quot;'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='R Code for the Computer&#39;s Selected Number'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Comments about the Game and Acknowledgements'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
